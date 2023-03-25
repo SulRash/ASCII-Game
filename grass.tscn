@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8h7sdjt0adr6"]
+
+[ext_resource type="Texture2D" uid="uid://bu6mrgrwxcpa4" path="res://art/textures/grass/grass1.png" id="1_wj5tl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D"]
+position = Vector2(44, 42)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wj5tl")

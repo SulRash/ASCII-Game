@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 var hp
 var strength
@@ -6,7 +6,6 @@ var defense
 var sanity
 var divinity
 var magic
-var velocity
 
 var speed = 100
 
@@ -29,4 +28,4 @@ func _process(delta):
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-	position += velocity * delta
+	move_and_collide(velocity * delta)

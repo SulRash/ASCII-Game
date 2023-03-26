@@ -1,14 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://vy8lu3rnrhxq"]
+[gd_scene load_steps=4 format=3 uid="uid://vy8lu3rnrhxq"]
 
 [ext_resource type="PackedScene" uid="uid://x8jlbhqi6utq" path="res://scenes/textures/tilemap.tscn" id="2_5nqih"]
 [ext_resource type="PackedScene" uid="uid://bdub1rewgqb7q" path="res://scenes/player.tscn" id="2_pqjpg"]
+[ext_resource type="PackedScene" uid="uid://53e180mhf43c" path="res://scenes/enemies/spider.tscn" id="3_hhcxo"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" parent="." instance=ExtResource("2_5nqih")]
-position = Vector2(102, 66)
-scale = Vector2(0.75, 0.75)
+position = Vector2(301, 392)
+scale = Vector2(2, 2)
 
 [node name="Player" parent="." instance=ExtResource("2_pqjpg")]
-position = Vector2(156, 78)
-scale = Vector2(0.2, 0.2)
+position = Vector2(367, 377)
+scale = Vector2(0.5, 0.3)
+
+[node name="Spider" parent="." instance=ExtResource("3_hhcxo")]
+position = Vector2(261, 483)

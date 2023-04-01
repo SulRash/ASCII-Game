@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6nme2etii8ya"]
+
+[ext_resource type="Texture2D" uid="uid://iw85dyn4t0pa" path="res://art/background/forestascii.png" id="1_wsm3o"]
+[ext_resource type="Texture2D" uid="uid://d4exk0ppn1fy0" path="res://art/sprites/spider.png" id="2_u1dfc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -2.0
+offset_right = 721.0
+offset_bottom = 1281.0
+texture = ExtResource("1_wsm3o")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 411.0
+offset_top = 1082.0
+offset_right = 555.0
+offset_bottom = 1291.0
+texture = ExtResource("2_u1dfc")

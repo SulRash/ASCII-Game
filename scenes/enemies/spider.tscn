@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://d4exk0ppn1fy0" path="res://art/sprites/spider.png" id="1_psnlr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hugtr"]
-size = Vector2(30, 31)
+size = Vector2(32, 34)
 
 [node name="Spider" type="CharacterBody2D"]
-position = Vector2(96, 122)
+position = Vector2(76, 162)
 script = ExtResource("1_cbsw1")
 metadata/_edit_group_ = true
 
@@ -15,5 +15,5 @@ metadata/_edit_group_ = true
 texture = ExtResource("1_psnlr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-6, -5.5)
+position = Vector2(-6, -6)
 shape = SubResource("RectangleShape2D_hugtr")
